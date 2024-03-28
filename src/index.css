@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* nav menu underline */
+.underline-grow::after {
+    content: '';
+    display: block;
+    border-bottom: 0.1rem solid black;
+    transform: scaleX(0);
+    transition: 0.3s linear;
+}
+.underline-grow:hover::after{
+    transform: scaleX(0.5);
+}
+
+/* slick dots */
+.slick-dots{
+    bottom: 10px;
+}
+.slick-dots li button:before{
+    color: #28CB8B;
+}
+.slick-dots li.slick-active button:before{
+    color: #28CB8B;
+}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap')
